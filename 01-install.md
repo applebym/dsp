@@ -37,7 +37,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> I installed Python 3.5 because I wanted the most recent version. To find the version, type `python --version` in the command line. 
+>> I installed Python 3.5 because Anaconda supports both versions. To find the version, type `python --version` in the command line. 
 
 ---
 
