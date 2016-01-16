@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will use vim. My research tells me that learning vim or emacs, while hard at first, pays off greatly in the long-run in added productivity. So now is a great time to learn! I chose vim over emacs simply because the consensus opinion out there seems to be that vim is slightly more user friendly (trade-off for somewhat less flexability, but I doubt I will ever need to go that in-depth anyways). 
 
 ---
 
