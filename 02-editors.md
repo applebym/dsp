@@ -31,7 +31,8 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> I will use vim. My research tells me that learning vim or emacs, while hard at first, pays off greatly in the long-run in added productivity. So now is a great time to learn! I chose vim over emacs simply because the consensus opinion out there seems to be that vim is slightly more user friendly (trade-off for somewhat less flexability, but I doubt I will ever need to go that in-depth anyways). 
+>> I decided to focus on using an IDE, thus I will use nano as my terminal editor since it is fairly straight forwards to use vs. vim or emacs. 
+
 
 ---
 
@@ -61,6 +62,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I am choosing to use PyCharm. After much research, I decided that an IDE (vs. an editor) is the right decision for me as I am already familiar with this type of programming environment. PyCharm also seems to be the "best" IDE, with features such as a debugger, split screen, tabs for different files, compatibility with external text editors, etc. I can see and customize all my keyboard shortcuts via the Settings>Keymap screen. I started with the Mac OSX defaults and as I use the applications I will learn and improve these shortcuts. 
 
 ---
