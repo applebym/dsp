@@ -14,7 +14,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > 
 'mkdir -p': this will make a path of directories even if they don't previously exist
-'ls -lr': more details on contents of a directory (size, author, date, etc.)
+'ls -lr': more details on contents of a directory (size, author, date, etc.)\n
 'pushd': brings you to the chosen directory; with no arguemnt will go to last directory pushed
 'popd': brings you back to previous directory
 'cp -r [dir] [dir]': copies and directory AND ITS CONTENTS (this is what the '-r' stands for) to another directory 
