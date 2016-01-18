@@ -12,7 +12,16 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+'mkdir -p': this will make a path of directories even if they don't previously exist
+'ls -lr': more details on contents of a directory (size, author, date, etc.)
+'pushd': brings you to the chosen directory; with no arguemnt will go to last directory pushed
+'popd': brings you back to previous directory
+'cp -r [dir] [dir]': copies and directory AND ITS CONTENTS (this is what the '-r' stands for) to another directory 
+'mv [old name] [new name]': moves/renames a file or directory 
+'more': display contents of file; use up and down arrow key or w to page through
+'rm -rf [dir]': removes a directory and its files
+
 
 ---
 
@@ -21,7 +30,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'ls' lists the contents of the current working directory. 'ls -a' 
 
 ---
 
