@@ -13,8 +13,8 @@ these in a couple of hours.
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 > > 
-`mkdir -p`: this will make a path of directories even if they don't previously exist
-`ls -lr`: more details on contents of a directory (size, author, date, etc.)\n
+`mkdir -p`: this will make a path of directories even if they don't previously exist 
+`ls -lr`: more details on contents of a directory (size, author, date, etc.)
 `pushd`: brings you to the chosen directory; with no arguemnt will go to last directory pushed
 `popd`: brings you back to previous directory
 `cp -r [dir] [dir]`: copies and directory AND ITS CONTENTS (this is what the '-r' stands for) to another directory 
@@ -41,7 +41,7 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > `xargs` will take an input from STDIN and then feed this to another command. Its usefulness comes with its combination with other commands, such as `find` and `grep`. 
+> > `xargs` will take an input from STDIN and then feed this to another command. It is most useful in combination with other commands, such as `find`, `grep`, `rm`, among others, where the output of one command is piped to `xargs` as STDIN and used as input to the proceeding command. An example would be `find . -name "*.txt" | xargs rm- rf` or `find . -name "*.doc" | xargs grep "Melanie"`.
 
 ---
 
