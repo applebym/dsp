@@ -21,6 +21,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 'mv [old name] [new name]': moves/renames a file or directory 
 'more': display contents of file; use up and down arrow key or w to page through
 'rm -rf [dir]': removes a directory and its files
+'*': wildcard re
+'grep -i [key word or phrase] [file/s]': this will look up the word or phrase in the files that match, ignoring case
 
 
 ---
@@ -30,7 +32,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > 'ls' lists the contents of the current working directory. 'ls -a' 
+> > `ls` lists the contents of the current working directory. `ls -a` lists all the directorys and all their contents. `ls -l` lists extra details including size, author, date, etc. `ls -lh` adds labels to the columns, such as size to make it more readable. 
 
 ---
 
@@ -39,7 +41,7 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `xargs` will take an input from STDIN and then feed this to another command. Its usefulness comes with its combination with other commands, such as `find` and `grep`. 
 
 ---
 
