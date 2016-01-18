@@ -95,7 +95,7 @@ Let's put this all together now!
 **5a. `git status`**
 
 In your local repository, edit the files for the problem statement with your solution.  
-
+EDITS GO HERE!!!!!!!!
 Go to your terminal. If you type `$ git status`, you should get a message like this:  
 
 ![gst](img/git_status.png)
