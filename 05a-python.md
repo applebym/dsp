@@ -61,18 +61,18 @@ and can refer to variables within its scope. It frequently
 comes in handy when using the map(), filter(), and reduce() 
 functions or sorting functions. Below are three examples:
 
->> An example of using lamda to simplify code:
+>> An example of using lamda to simplify code: 
 >> `f = lambda x: x * 2 + 10`
 >> `f(4)`
 >> 18
 
->> An example of using lambda with filter()
+>> An example of using lambda with filter(): 
 >> `a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`
 >> `b = filter(lambda x: x % 2 == 0, a)`
 >> `print b`
 >> [2, 4, 6, 8, 10]
 
->> An example of using lambda with sorted()
+>> An example of using lambda with sorted(): 
 >> `a = [('John',12),('Mary',13),('Alex',10),('Melanie',8)]`
 >> `b = sorted(a, key=lambda x: x[1])`
 >> `print b`
