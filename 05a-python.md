@@ -84,7 +84,11 @@ functions or sorting functions. Below are three examples:
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> List comprehension is a simple and fast way to create a list. For example, you can create a list of square numbers by writing `squares = [x**2 for x in range(1,10)]`. Using `map()` this would look like: `squares = map(lambda x: x**2, range(1,10))`. Another example could be finding only upper case words in a string `sentence = "The Metis Data Science program is located in New York City"` by writing `upper = [word for word in sentence.split() if word[0].isupper()]`. Using the `filter()` function would look like this: `upper = filter(lambda x: x[0].isupper(), sentence.split())`.
+>> List comprehension is a simple and fast way to create a list. 
+>> For example, you can create a list of square numbers by writing `squares = [x**2 for x in range(1,10)]`. Using `map()` this would look like: `squares = map(lambda x: x**2, range(1,10))`. 
+>> Another example could be finding only upper case words in a string `sentence = "The Metis Data Science program is located in New York City"` by writing `upper = [word for word in sentence.split() if word[0].isupper()]`. Using the `filter()` function would look like this: `upper = filter(lambda x: x[0].isupper(), sentence.split())`.
+>> This can apply to sets as well: `a = {x for x in 'Alexander' if x in 'Alexandria'}`
+>> Or a dictionary: `word = "Mississippi"` `{x:word.count(x) for x in list(word)}` 
 
 ---
 
