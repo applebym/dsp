@@ -77,6 +77,7 @@ functions or sorting functions. Below are three examples:
 >> `b = sorted(a, key=lambda x: x[1])`
 >> `print b`
 >> [('Melanie', 8), ('Alex', 10), ('John', 12), ('Mary', 13)]
+
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
