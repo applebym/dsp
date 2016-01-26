@@ -15,8 +15,12 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
-
+    count = 0
+    for item in words:
+        if item == '': continue
+        if item[0] == item[-1] and len(item) >= 2:
+            count += 1
+    return count
 
 def front_x(words):
     """
@@ -32,8 +36,14 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
-
+    words.sort()
+    x_list = []
+    for item in words:
+        if item[0].lower() == 'x':
+            x_list.append(item)
+            words.remove(item)
+    x_list.sort()
+    return x_list + words
 
 def sort_last(tuples):
     """
@@ -49,7 +59,9 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    tuples_sorted = sorted(tuples,key = lambda x:x[len(x)-1])
+    return tuples_sorted
+
 
 
 def remove_adjacent(nums):
@@ -68,8 +80,19 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    no_doubles = []
+    if nums == []:
+        return []
+    for i in range(len(nums)):
+        if i == len(nums)-1:
+            no_doubles.append(nums[i])
+        elif nums[i] != nums[i+1]:
+            no_doubles.append(nums[i])
+    return no_doubles
 
+    # new_nums = [x for x in nums if x != nums[nums.index(x)+1]]
+    # print new_nums
+    # return new_nums
 
 def linear_merge(list1, list2):
     """
@@ -85,4 +108,54 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    combined = (list1 + list2)
+    combined.sort()
+    return combined
+
+
+def test(got, expected):
+    if got == expected:
+        prefix = ' OK '
+    else:
+        prefix = '  X '
+    print '%s got: %s expected: %s' % (prefix, repr(got), repr(expected))
+
+
+if __name__ == '__main__':
+    print 'match_ends'
+    test(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']), 3)
+    test(match_ends(['', 'x', 'xy', 'xyx', 'xx']), 2)
+    test(match_ends(['aaa', 'be', 'abc', 'hello']), 1)
+
+    print
+    print 'front_x'
+    test(front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa']),
+         ['xaa', 'xzz', 'axx', 'bbb', 'ccc'])
+    test(front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa']),
+         ['xaa', 'xcc', 'aaa', 'bbb', 'ccc'])
+    test(front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']),
+         ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'])
+
+    print
+    print 'sort_last'
+    test(sort_last([(1, 3), (3, 2), (2, 1)]),
+         [(2, 1), (3, 2), (1, 3)])
+    test(sort_last([(2, 3), (1, 2), (3, 1)]),
+         [(3, 1), (1, 2), (2, 3)])
+    test(sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]),
+         [(2, 2), (1, 3), (3, 4, 5), (1, 7)])
+
+    print
+    print 'remove_adjacent'
+    test(remove_adjacent([1, 2, 2, 3]), [1, 2, 3])
+    test(remove_adjacent([2, 2, 3, 3, 3]), [2, 3])
+    test(remove_adjacent([]), [])
+
+    print
+    print 'linear_merge'
+    test(linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc']),
+         ['aa', 'bb', 'cc', 'xx', 'zz'])
+    test(linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz']),
+         ['aa', 'bb', 'cc', 'xx', 'zz'])
+    test(linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb']),
+         ['aa', 'aa', 'aa', 'bb', 'bb'])
