@@ -12,19 +12,18 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> Python lists and tuples are different in the following 
+>> Python lists and tuples are different in the following
 ways: their syntax (lists have brackets while tuples have 
-parentheses), lists are mutable while tuples are 
-immutable.
+parentheses), lists are mutable while tuples are immutable.
 
->>The two are similar in the following ways: you can refer 
-to each individual element by using an index, you can use 
-the slice operator on both, both can handle multiple types 
-in the same list/tuple.
+>>The two are similar in the following ways: you can refer
+to each individual element by using an index, you can use the 
+slice operator on both, both can handle multiple types in the 
+same list/tuple.
 
->>The keys of a dictionary must be hashable, which also 
-requires them to be immutable. Thus keys of a dictionary 
-can be tuples but not lists.
+>>The keys of a dictionary must be hashable, which also
+requires them to be immutable. Thus keys of a dictionary can 
+be tuples but not lists.
 
 ---
 
@@ -32,7 +31,22 @@ can be tuples but not lists.
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python sets are unordered and do not contain any of the
+sequence functions (element positions, order of insertion, 
+slicing, indexing, etc.) that a list contains, which are 
+ordered. Sets also must contain unique elements while lists 
+can contain repeats. Sets cannot contain mutable data types, 
+while lists can, unless you implement an ImmutableSet. Some 
+similarities are that they both can use the length function, 
+"in" function, < function and > function. However, sets have 
+some added functions, including union, intersection, and 
+difference. In terms of finding an element, sets are faster 
+than lists. However, if you are iterating over the entire 
+contents, then lists are faster. The reason for this is that 
+sets are implemented using hash tables, whcih means that when 
+testing for membership, the size of the set does not matter 
+(O(1)) vs. in a list where the size of the list does matter 
+(O(n)).
 
 ---
 
@@ -40,8 +54,29 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python's `lambda` is a one-line, simple, anonymous function 
+that is used in place of calling a seperate function, helping 
+to simplify code. It is also refered to as a nested function 
+and can refer to variables within its scope. It frequently 
+comes in handy when using the map(), filter(), and reduce() 
+functions or sorting functions. Below are three examples:
 
+>> An example of using lamda to simplify code:
+>> `f = lambda x: x * 2 + 10`
+>> `f(4)`
+>> 18
+
+>> An example of using lambda with filter()
+>> `a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`
+>> `b = filter(lambda x: x % 2 == 0, a)`
+>> `print b`
+>> [2, 4, 6, 8, 10]
+
+>> An example of using lambda with sorted()
+>> `a = [('John',12),('Mary',13),('Alex',10),('Melanie',8)]`
+>> `b = sorted(a, key=lambda x: x[1])`
+>> `print b`
+>> [('Melanie', 8), ('Alex', 10), ('John', 12), ('Mary', 13)]
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
