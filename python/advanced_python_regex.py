@@ -1,33 +1,5 @@
-import re
 import csv
 import string
-
-# class Professor(object):
-#     """
-#     Represents a Professor.
-#
-#     attributes: name, degree, title, email.
-#     """
-#
-#     def __init__(self, name='', degree='', title='', email=''):
-#         self.name = name
-#         self.degree = degree
-#         self.title = title
-#         self.email = email
-#
-#     def __str__(self):
-#         return str('Name: %s, Degree: %s, Title: %s, Email: %s' % \
-#               (self.name, self.degree, self.title, self.email))
-#
-#     def get(self, attr):
-#         if attr == 'name':
-#             return self.name
-#         if attr == 'degree':
-#             return self.degree
-#         if attr == 'title':
-#             return self.title
-#         if attr == 'email':
-#             return self.email
 
 def read_data(filename):
     with open(filename) as fp:
@@ -84,7 +56,6 @@ def get_domains(email_list):
 
 def main():
     data = read_data('faculty.csv')
-    print data
 
     degrees_dict = make_hist(data, 1)
     print 'There are %d different degrees.' % (len(degrees_dict.keys()))
