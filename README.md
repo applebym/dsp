@@ -23,9 +23,11 @@ Metis data science bootcamp. Students should budget **60+ hours** to complete th
  
  >Step 5b. [Advanced Python](05b-python_advanced.md)  
  
- Step 6. [Statistics](06-statistics.md)
+ Step 6. [Linear Algebra](06-linear_algebra.md)
  
- Step 7. [More Resources](07-more_resources.md)
+ Step 7. [Statistics](07-statistics.md)
+ 
+ Step 8. [More Resources](08-more_resources.md)
 
 <h1 style='text-align: center;'>Remember to save your work!</h1>
 

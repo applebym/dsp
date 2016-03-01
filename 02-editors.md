@@ -10,6 +10,7 @@ It may sound silly, but [make sure](http://www.typingtest.com/) you know how to 
 
 A lot of your work will be done in a text editor. You have to know how to use your editor. Any editor will work, but knowing a powerful editor well will make you faster, more comfortable, and more effective.
 
+---
 
 ### Terminal Editor
 
@@ -29,15 +30,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 ---
 
-What terminal editor will you use? How did you make your decision?
-
->> I decided to focus on using an IDE, thus I will use nano as my terminal editor since it is fairly straight forwards to use vs. vim or emacs. 
-
-
----
-
-
-### Graphical Editor
+###Graphical Editor
 
 You will probably spend most of your time with access to a graphical interface, where you have more choices in editors and integrated development environments.
 
@@ -60,8 +53,18 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 ---
 
+###Q1. Terminal Editor
+
+What terminal editor will you use? How did you make your decision?
+
+>> I decided to focus on using an IDE, thus I will use nano as my terminal editor since it is fairly straight forwards to use vs. vim or emacs. 
+
+--
+
+###Q2. Graphical Editor
+
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
 >> I am choosing to use PyCharm. After much research, I decided that an IDE (vs. an editor) is the right decision for me as I am already familiar with this type of programming environment. PyCharm also seems to be the "best" IDE, with features such as a debugger, split screen, tabs for different files, compatibility with external text editors, etc. I can see and customize all my keyboard shortcuts via the Settings>Keymap screen. I started with the Mac OSX defaults and as I use the applications I will learn and improve these shortcuts. 
 
----
+ 
