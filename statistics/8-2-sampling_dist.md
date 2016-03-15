@@ -1,5 +1,7 @@
 [Think Stats Chapter 8 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2009.html#toc77) (scoring)
 
+
+For this file I worked off of a copy of estimation.py
 ```python
 """This file contains code used in "Think Stats",
 by Allen B. Downey, available from greenteapress.com
