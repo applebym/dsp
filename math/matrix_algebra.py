@@ -10,8 +10,9 @@ u = Matrix([[6, 2,-3,5]])
 v = Matrix([[3,5,-1,4]])
 w = Matrix([1,8,0,5])
 
-def find_dim(m):
-    print(m.shape)
+def find_dim():
+    for m in [A, B, C, D, u, w]:
+        print(m.shape)
 
 
 def vec_ops(alpha=6):
@@ -87,8 +88,7 @@ def main():
     (4, 1)
     """
     print('Q1')
-    for m in [A, B, C, D, u, w]:
-        find_dim(m)
+    find_dim()
     print()
 
     """
