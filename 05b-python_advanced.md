@@ -21,21 +21,21 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 >> There are 8 different degrees. Their frequencies are as follows:
 
-MD 1, 
+>>> MD 1, 
 
-MA 1, 
+>>> MA 1, 
 
-SCD 6, 
+>>> SCD 6, 
 
-BSED 1, 
+>>> BSED 1, 
 
-PHD 31, 
+>>> PHD 31, 
 
-MPH 2, 
+>>> MPH 2, 
 
-MS 2, 
+>>> MS 2, 
 
-JD 1
+>>> JD 1
 
 
 
@@ -43,16 +43,16 @@ JD 1
 
 >> There are 3 different titles. Their frequencies are as follows: 
 
-Assistant Professor of Biostatistics 12, 
+>>> Assistant Professor of Biostatistics 12, 
 
-Professor of Biostatistics 13, 
+>>> Professor of Biostatistics 13, 
 
-Associate Professor of Biostatistics 12
+>>> Associate Professor of Biostatistics 12
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
->> bellamys@mail.med.upenn.edu
+bellamys@mail.med.upenn.edu
 
 warren@upenn.edu
 
@@ -132,13 +132,13 @@ weiyang@mail.med.upenn.edu
 
 >> There are 4 different domains. They are as follows: 
 
-email.chop.edu
+>>> email.chop.edu
 
-upenn.edu
+>>> upenn.edu
 
-cceb.med.upenn.edu
+>>> cceb.med.upenn.edu
 
-mail.med.upenn.edu
+>>> mail.med.upenn.edu
 
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
@@ -179,18 +179,15 @@ faculty_dict = { 'Ellenberg': [\
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> Putt
-
+Putt
 [['PhD ScD', 'Professor', 'mputt@mail.med.upenn.edu']]
 
 
 Feng
-
 [['Ph.D', 'Assistant Professor', 'ruifeng@upenn.edu']]
 
 
 Bilker
-
 [['Ph.D.', 'Professor', 'warren@upenn.edu']]
 
 
@@ -208,7 +205,7 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> ('Yimei', 'Li')
+('Yimei', 'Li')
 
 ['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu']
 
