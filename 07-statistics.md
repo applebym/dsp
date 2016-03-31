@@ -81,7 +81,7 @@ P(Identical | Twin Brother) = P(Identical)*P(Twin Browth | Identical) / P(Twin B
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Based on my short amount of research, each camp approaches the same statistics problem two different ways. For the Frequentist, data collected is  always considered to be drawn from a random sample, while the underlying actual parameter stays constant. For the Bayesian, data is only an observation of a sample that allows one to assign a probability to what is always an unknown parameter. So the real difference is that Frequentists see the parameter as fixed, while Bayesians see the data as fixed. 
 
 ---
 
