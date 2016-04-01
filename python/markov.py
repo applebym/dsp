@@ -12,7 +12,10 @@
 
 # There are design choices to make; feel free to experiment and shape the program as you see fit. Jeff Atwood's [Markov and You](http://blog.codinghorror.com/markov-and-you/) is a fun place to get started learning about what you're trying to make.
 
-```python
+# NOTE: My code does not directly align with the instructions because I 
+# completed the code while reading Think Python and before I saw there was 
+# an optional Markov exercise.
+ 
 import string
 import random
 import re
@@ -83,4 +86,4 @@ if __name__ == '__main__':
     text_len = raw_input('How many markov iterations?: ')
     text_list = random_text(dict, int(text_len))
     print_output(text_list)
-```
+
